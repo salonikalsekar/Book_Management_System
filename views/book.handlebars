@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Book System</title>
+         
+	
+	{{#if errors}}
+			<div class="alert alert-danger">{{errors}}</div>
+	{{/if}}
+       {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+</head>
+
+<body>
+  
+
+    
+    <form action = "/addBook" method = "post" id = "book">
+            <center>
+                <table>
+                    <tr>
+                        <td><label>Book Number:</label></td>
+                        <td><input type="number" class="form-control" placeholder="Enter Book No." name="bnum" id="bnum"></td>
+                    </tr>
+                     <tr>
+                        <td><label>Book Name:</label></td>
+                        <td><input type="text" class="form-control" placeholder="Enter Book Name" id="bname" name="bname"></td>
+                    </tr>
+                    
+                </table><br><br>
+                <input type="Submit" class="form-control" value="Submit" id="addBook_btn" name="addBook_btn">
+
+                
+            </center>
+    </form>
+    
+    
+</body>
+
+</html>

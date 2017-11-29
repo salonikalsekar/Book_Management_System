@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Register!</title>
+       
+	{{#if errors}}
+		{{#each errors}}
+			<div class="alert alert-danger">{{msg}}</div>
+		{{/each}}
+	{{/if}}
+    {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+</head>
+<body>
+
+<div class = "container">
+	<div class="wrapper">
+		<form action="/register" method="post" name="Login_Form" class="form-signin">       
+		    <h3 class="form-signin-heading">Register</h3>
+			  <hr class="colorgraph"><br>
+			 Name: <input type="text" class="form-control" name="name" placeholder="Name" id="name" />			  
+			 Username: <input type="text" class="form-control" name="username1" placeholder="Username" id="username1" />
+      EMail ID: <input type="email" class="form-control" name="email" placeholder="Email ID" id="email" />     		  
+			Password:  <input type="password" class="form-control" name="password1" placeholder="Password" id="password1" /> 
+      Confirm Password: <input type="password" class="form-control" name="ConPassword1" placeholder="Confirm Password" id="ConPassword1" />     		  
+    		
+        <br>
+			 
+			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Register" type="Submit">Register</button>  			
+		</form>			
+	</div>
+</div>
+
+</form>
+</body>
+
+</html>
